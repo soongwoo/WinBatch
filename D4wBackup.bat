@@ -1,7 +1,7 @@
 @ECHO OFF
 SET EXE7Z=C:\Windows\System32\7za.exe
-REM SET LOG=E:\Dropbox\Today.D4w\d4wbackup.log
-SET LOG=d4wbackup.log
+:: SET LOG=E:\Dropbox\Today.D4w\d4wbackup.log
+SET SET LOG=d4wbackup.log
 SET SOURCE=E:\D4w_Data\D4w.*
 SET TARGET=E:\Dropbox\Today.D4w\ST-d4w.7z
 
@@ -15,7 +15,7 @@ del %TARGET%
 
 :RUN7Z
 %EXE7Z% a -t7z %TARGET% %SOURCE%
-REM for %I in (E:\Dropbox\Today.D4w\ST-d4w.7z) do @echo %~znI >> %log%
+:: for %I in (E:\Dropbox\Today.D4w\ST-d4w.7z) do @echo %~znI >> %log%
 GOTO ENDBATCH
 
 :NOEXE7Z
