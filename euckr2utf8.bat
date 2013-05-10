@@ -20,7 +20,7 @@ IF NOT EXIST %OUTFILE% (
 )
 
 : rename the argument to temporary one
-%RENAME% %1 %TMPFILE%
+%MV% %1 %TMPFILE%
 
 :: convert it with iconv windows binary
 echo Convert %OUTFILE%'s encoding to utf-8 ...
